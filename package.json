@@ -1,0 +1,14 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "Challenge From Front-end Mentor To Resolve",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Souleymane Sy",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
