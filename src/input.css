@@ -7,3 +7,82 @@
         font-family: Inter, sans-serif;
     }
 }
+
+body {
+    overflow-x: hidden;
+}
+
+/* 
+    ================================
+         Hamburger-Menu Customs 
+    ================================
+*/
+
+
+
+#hamburger-menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+
+    z-index: 1000;
+}
+#hamburger-menu::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    transform: translateY(-13px);
+    border-radius: 4px;
+    transition: 400ms ease-out;
+}
+
+#hamburger-menu::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    transform: translateY(13px);
+    box-shadow: 0 -13px black;
+    border-radius: 4px;
+    transition: 400ms ease-out;
+}
+
+#hamburger-menu.active::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    transform: translateY(0px) rotate(-45deg);
+    border-radius: 4px;
+    transition: 400ms ease-out;
+}
+#hamburger-menu.active::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: none;
+    border-radius: 4px;
+    transition: 400ms ease-out;
+}
+
+#mobile-menu {
+    height: 100%;
+}
+
+#mobile-menu.active {
+    right: 0;
+    box-shadow: -250px 0 0px hsla(240, 100%, 5%, 0.5);
+    overflow-y: hidden;
+}

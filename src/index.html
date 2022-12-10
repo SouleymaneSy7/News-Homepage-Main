@@ -4,17 +4,159 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
   <!-- Css Customs Links -->
   <link rel="stylesheet" href="../css/main.css">
   <title>Frontend Mentor Challenge | News homepage</title>
 </head>
 <body>
+  <!-- Headers -->
+  <header class="mt-4 mx-3 md:mt-6 lg:mx-24">
+    <nav class="flex justify-between items-center">
+      <!-- Logo -->
+      <div>
+        <a href="#"><img src="../assets/images/logo.svg" alt="Logo of the website"></a>
+      </div>
+       <!-- Navigation -->
+      <ul class="hidden md:flex space-x-8">
+        <li><a href="#" class="text-base text-dark-grayish-blue font-semi-bold hover:text-soft-orange transition duration-300">Home</a></li>
+        <li><a href="#" class="text-base text-dark-grayish-blue font-semi-bold hover:text-soft-orange transition duration-300">New</a></li>
+        <li><a href="#" class="text-base text-dark-grayish-blue font-semi-bold hover:text-soft-orange transition duration-300">Popular</a></li>
+        <li><a href="#" class="text-base text-dark-grayish-blue font-semi-bold hover:text-soft-orange transition duration-300">Trending</a></li>
+        <li><a href="#" class="text-base text-dark-grayish-blue font-semi-bold hover:text-soft-orange transition duration-300">Categories</a></li>
+      </ul>
 
+      <!-- Hamburger Menu -->
+      <div id="hamburger-menu-container" class="md:hidden">
+        <div id="hamburger-menu"></div>
+      </div>
 
-  <H1 class="text-2xl">Hello World</H1>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="absolute h-full w-9/12 top-0 -right-full bg-off-white flex  transititon duration-300 md:hidden">
+          <div id="menu" class="relative top-28 flex flex-col items-start ml-6">
+            <a href="#" class="mt-8 text-2xl transition duration-300 hover:text-soft-red">Home</a>
+            <a href="#" class="mt-8 text-2xl transition duration-300 hover:text-soft-red">New</a>
+            <a href="#" class="mt-8 text-2xl transition duration-300 hover:text-soft-red">Popular</a>
+            <a href="#" class="mt-8 text-2xl transition duration-300 hover:text-soft-red">Trending</a>
+            <a href="#" class="mt-8 text-2xl transition duration-300 hover:text-soft-red">Categories</a>
+          </div>
+        </div>
+    </nav>
+  </header> 
 
+  <!-- Hero Section -->
+  <main class="flex flex-col mt-5 mx-3 space-y-5 md:mt-8 md:mx-24 lg:mx-24 md:flex md:flex-row md:items-start md:space-x-7 md:space-y-0 md:items-stretch md:mt-5">
+    <!-- Banner -->
+    <div id="left" class="md:w-9/12">
+      <div class="flex flex-col  md:w-full">
+        <!-- Banner Images -->
+        <div  class="mb-5 md:mb-2" >
+          <div class=" md:hidden">
+            <img src="../assets/images/image-web-3-mobile.jpg" alt="Banner images">
+          </div>
   
+          <div class="hidden md:block md:h-80 md:w-full">
+            <img src="../assets/images/image-web-3-desktop.jpg"  class="h-full w-full object-cover object-center" alt="Banner images">
+          </div>
+        </div>
+        
+        <!-- Banner Text-Box -->
+        <div class="md:flex md:items-start md:space-x-4">
+          <div id="title" class="md:w-2/4">
+            <h1 class="text-4xl font-extrabold md:text-5xl ">The Bright Future of Web 3.0?</h1>
+          </div>
+
+          <div id="text-content" class="flex flex-col items-start md:w-2/4 md:h-full md:items-between">
+            <p class="text-sm text-dark-grayish-blue  leading-relaxed  my-5 md:my-0">
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+
+            <button class="py-3 px-6  text-white tracking-widest uppercase bg-soft-red md:mt-8  hover:bg-very-dark-blue transition duration-300">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="right" class="py-6 px-5 text-white bg-very-dark-blue md:w-3/12 md:flex md:flex-col justify-center" >
+      <h1 class="text-4xl font-bold text-soft-orange mb-6">New</h1>
+      <!-- 1 -->
+      <div class="border-b border-dark-grayish-blue pb-6 mb-6">
+        <a href="#" class="text-xl font-bold text-off-white mb-2 hover:text-soft-orange transition duration-300"><h3>Hydrogen VS Electric Cars</h3></a>
+        <p class="text-base text-dark-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      
+      <!-- 2 -->
+      <div class="border-b border-dark-grayish-blue pb-6 mb-6">
+        <a href="#" class="text-xl font-bold text-off-white mb-2 hover:text-soft-orange transition duration-300"><h3>The Downsides of AI Artistry</h3></a>
+        <p class="text-base text-dark-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+
+      <!-- 3 -->
+      <div class="">
+        <a href="#" class="text-xl font-bold text-off-white mb-2 hover:text-soft-orange transition duration-300"><h3>Is VC Funding Drying Up?</h3></a>
+        <p class="text-base text-dark-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+    
+  </main>
+
+  <!-- Footer  -->
+
+  <footer class="flex flex-col mt-4 mx-3 md:flex-row md:mx-24 md:mt-8 md:justify-between md:flex-wrap">
+
+    <!-- Card 1 -->
+    <div id="card__1" class="flex mb-4 items-center md:max-w-md">
+      <div class="mr-4">
+        <img src="../assets/images/image-retro-pcs.jpg" class="w-56" alt="Retro Pc">
+      </div>
+
+      <div>
+        <h1 class="text-4xl font-bold text-grayish-blue my-3">01</h1>
+
+        <a href="#" class="text-xl font-bold hover:text-soft-red"><h3 class="inline-block">Reviving Retro PCs</h3></a>
+
+        <p class="text-base text-dark-grayish-blue tracking-widest  mt-2">
+          What happens when old PCs are given modern upgrades?
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Card 2 -->
+    <div id="card__2" class="flex mb-4 items-center md:max-w-md">
+      <div class="mr-4">
+        <img src="../assets/images/image-top-laptops.jpg" class="w-40" alt="Pc Keyboards">
+      </div>
+
+      <div>
+        <h1 class="text-4xl font-bold text-grayish-blue mb-2">02</h1>
+
+        <a href="#" class="text-xl font-bold my-3 hover:text-soft-red transition duration-300"><h3 class="inline-block">Top 10 Laptops of 2022</h3></a>
+
+        <p class="text-base text-dark-grayish-blue tracking-wide  mt-2">
+          Our best picks for various needs and budgets.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div id="card__3" class="flex mb-4 items-center md:max-w-md ">
+      <div class="mr-4">
+        <img src="../assets/images/image-gaming-growth.jpg" class="w-44" alt="Gaming">
+      </div>
+
+      <div>
+        <h1 class="text-4xl font-bold text-grayish-blue mb-2">03</h1>
+
+        <a href="#" class="text-xl font-bold my-3 hover:text-soft-red transition duration-300"><h3 class="inline-block">The Growth of Gaming</h3></a>
+
+        <p class="text-base text-dark-grayish-blue tracking-wide  mt-2">
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </div>
+    </div>
+  </footer>
 
   <!-- Javascript Customs Links -->
   <script src="script.js"></script>
