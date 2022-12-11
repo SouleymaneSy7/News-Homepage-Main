@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/main.css">
   <title>Frontend Mentor Challenge | News homepage</title>
 </head>
-<body>
+<body class="overflow-x-hidden">
   <!-- Headers -->
   <header class="mt-4 mx-3 md:mt-6 lg:mx-24">
     <nav class="flex justify-between items-center">
@@ -32,7 +32,7 @@
       </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="absolute h-full w-9/12 top-0 -right-full bg-off-white flex  transititon duration-300 md:hidden">
+        <div id="mobile-menu" class="absolute h-full w-9/12 top-0 right-full bg-off-white flex  transititon duration-300 md:hidden">
           <div id="menu" class="relative top-28 flex flex-col items-start ml-6">
             <a href="#" class="mt-8 text-2xl transition duration-300 hover:text-soft-red">Home</a>
             <a href="#" class="mt-8 text-2xl transition duration-300 hover:text-soft-red">New</a>
@@ -45,9 +45,9 @@
   </header> 
 
   <!-- Hero Section -->
-  <main class="flex flex-col mt-5 mx-3 space-y-5 md:mt-8 md:mx-24 lg:mx-24 md:flex md:flex-row md:items-start md:space-x-7 md:space-y-0 md:items-stretch md:mt-5">
+  <main class="flex flex-col mt-5 mx-3 space-y-5 md:mt-8 md:mx-24 lg:mx-24 md:flex md:flex-col md:justify-center md:items-start lg:space-x-7 md:space-y-5 md:items-stretch md:mt-5 lg:flex-row  lg:space-y-0">
     <!-- Banner -->
-    <div id="left" class="md:w-9/12">
+    <div id="left" class="lg:w-9/12 ">
       <div class="flex flex-col  md:w-full">
         <!-- Banner Images -->
         <div  class="mb-5 md:mb-2" >
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div id="right" class="py-6 px-5 text-white bg-very-dark-blue md:w-3/12 md:flex md:flex-col justify-center" >
+    <div id="right" class="py-6 px-5 text-white bg-very-dark-blue md:flex md:flex-col justify-center md:w-full lg:w-3/12 lg:" >
       <h1 class="text-4xl font-bold text-soft-orange mb-6">New</h1>
       <!-- 1 -->
       <div class="border-b border-dark-grayish-blue pb-6 mb-6">
@@ -103,7 +103,7 @@
 
   <!-- Footer  -->
 
-  <footer class="flex flex-col mt-4 mx-3 md:flex-row md:mx-24 md:mt-8 md:justify-between md:flex-wrap">
+  <footer class="flex flex-col mt-4 mx-3 md:flex-col md:mx-24 md:mt-8 md:justify-between lg:flex-row">
 
     <!-- Card 1 -->
     <div id="card__1" class="flex mb-4 items-center md:max-w-md">
@@ -158,6 +158,12 @@
     </div>
   </footer>
 
+
+  <div class="flex flex-col justify-center mb-5 items-center md:flex-row lg:mb-0">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-soft-red text-lg font-bold hover:text-dark-grayish-blue transition duration-300">Frontend Mentor</a>. </p>
+    
+    <p>Coded by <a href="https://github.com/SouleymaneSy7" target="_blank" class="text-soft-red text-lg font-bold  hover:text-dark-grayish-blue transition duration-300">Souleymane Sy</a>.</p>
+  </div>
   <!-- Javascript Customs Links -->
   <script src="script.js"></script>
 </body>

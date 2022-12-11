@@ -8,9 +8,6 @@
     }
 }
 
-body {
-    overflow-x: hidden;
-}
 
 /* 
     ================================
@@ -84,5 +81,5 @@ body {
 #mobile-menu.active {
     right: 0;
     box-shadow: -250px 0 0px hsla(240, 100%, 5%, 0.5);
-    overflow-y: hidden;
+    overflow: hidden;
 }
